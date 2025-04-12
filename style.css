@@ -1,0 +1,23 @@
+body {
+    font-family: Inter;
+    color: #ffffff;
+
+}
+
+header-text {
+    font-family: Hanken Grotesk;
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+small-text {
+    font-family: Hanken Grotesk;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+img {
+    border-radius: 30px;
+}
