@@ -1,6 +1,10 @@
 body {
     font-family: Inter;
     color: #ffffff;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
 
 }
 
@@ -18,6 +22,122 @@ small-text {
     font-weight: 200;
 }
 
-img {
-    border-radius: 30px;
+.buttons a {
+    color: #005A3C;
+    text-decoration: none;
 }
+
+.buttons a:hover {
+    background-color: #005A3C;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar-links a:hover{
+    &:hover {
+        color: #006241;
+    }
+}
+
+/*Carousel Styles*/
+
+.logo-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+  
+  .logo-heading {
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 20px;
+  }
+  
+  .logo-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .logo-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-logos 30s linear infinite;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .logo-track img {
+    height: 50px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .logo-track img:hover {
+    opacity: 1;
+  }
+  
+  @keyframes scroll-logos {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Carousel CSS stuff */
+  .logo-slider::before,
+  .logo-slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .logo-slider::before {
+    left: 0;
+    background: linear-gradient(to right, #f9f9f9 0%, transparent 100%);
+  }
+  
+  .logo-slider::after {
+    right: 0;
+    background: linear-gradient(to left, #f9f9f9 0%, transparent 100%);
+  }
+  
+  .container {
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 75%;
+    margin: 40px auto;
+    gap: 40px;
+    display: grid;
+  }
+  
+  .benefit-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 100%;
+    width: 300px;
+    flex-shrink: 0;
+  }
+  
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      max-width: 75%;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
