@@ -4,91 +4,413 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="public/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColorStack at Loyola University Maryland</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
     <!--Navbar-->
-    <section id = "navbar" style="background-color: 
-        #ffffff; 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        ">
-        <div style=
-            "display: flex;
-            flex-direction: row;
-            ">
-            <img src="/public/colorstacklum_logo.png" alt="ColorStack Logo" style=
-            "width: 100%;
-            height: 40px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            align-items: center;
-            margin-left: 300px;
-            "
-            >
-            <h1 className = "navbar-text" style="font-family: Inter; color: #005A3C; font-size: 30px;">ColorStack</h1>
+    <section style="background-color: #ffffff; display: flex; justify-content: space-between; gap: 10px; margin-top: 0; padding: 0 270px; width: 100%;">
+        <div style= "display: flex; flex-direction: row; align-items: center; ">
+            
+            <div>
+                <a href="/" style="display: flex; flex-direction: row; align-items: center; text-decoration: none;">
+                    <img src="/public/colorstacklum_logo.png" alt="ColorStack Logo" style=
+                    "height: 40px;
+                    border-radius: 10px;
+                    ">
+                    <h1 className = "navbar-text" style="color: #005A3C; font-size: 27px; margin-right: 10px;">ColorStack</h1>
+                    <h1 className = "navbar-text" style="color: #6B7280; font-size: 13px; font-weight: 400; margin-right: 500px;">at Loyola University Maryland</h1>
+                </a>
+            </div>
+            
+            <div style=
+                "gap: 30px; display: flex; flex-direction: row; font-size: 16px;"> 
+            <!-- Nav Links -->
+            <a href="/" class="navbar-text" style="color: #000000; font-weight: 500; padding: 10px 0; text-decoration: none;">Home</a>
+            <a href="/about.html" class="navbar-text" style="color: #000000; font-weight: 500; padding: 10px 0; text-decoration: none;">About</a>
+            <a href="/resources.html" class="navbar-text" style="color: #000000; font-weight: 500; padding: 10px 0; text-decoration: none; ">Resources</a>
+            <a href="https://forms.gle/Ya52JCUpUz5DQdm1A" target="_blank" class="navbar-text" style="color: #ffffff; font-weight: 500; background-color: #005A3C; border-radius: 7px; padding: 10px 20px; text-decoration: none; margin-left: 160px;">Join</a>
+
+            </div>
         </div>
     </section>
 
-    <section style=
-    "background-image: linear-gradient(#005A3C, #006B43, #009661);
-    background-size: 100%;
-    padding: 20px;
-    max-width: 100%;
-    ">
-        <div style=
-            "padding-left: 250px;
-            padding-top: 100px;
-            padding-bottom: 150px;
-        ">
-            <h1 className = "welcome-text" 
-                style=
-                "font-family: Hanken Grotesk;
-                color: #ffffff;
-                font-size: 60px;
-                font-weight: 700;
-                text-align: left;
-                margin-bottom: 0;
-                ">Welcome to ColorStack at <br/>Loyola University Maryland!
+    <!--Hero Section-->
+    <section style="background-image: linear-gradient(#005A3C, #006B43, #006241); padding: 100px 250px; max-width: 100%;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 60px;">
+    
+        <!-- Left: Text -->
+        <div style="flex: 1; min-width: 300px;">
+            <h1 style="font-family: 'Hanken Grotesk', sans-serif; color: #ffffff; font-size: 50px; font-weight: 700; text-align: left; margin-bottom: 30px; line-height: 0.9;">
+            Welcome to ColorStack at <br />Loyola University Maryland!
             </h1>
+    
+            <p style="color: #ffffff; font-family: 'Inter', sans-serif; font-size: 20px; margin-bottom: 35px;">
+            We are a community of students passionate about technology and <br /> diversity.
+            </p>
+    
+            <div style="margin-top: 20px;">
+            <a href="https://forms.gle/Ya52JCUpUz5DQdm1A" style="color: #005A3C; background-color: white; padding: 15px 30px; border-radius: 10px; margin-right: 10px; text-decoration: none; display: inline-block;">Become a member</a>
+            <a href="#AboutUs" style="color: #005A3C; background-color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; display: inline-block;">Learn more</a>
+            </div>
+        </div>
+    
+        <!-- Right: Image -->
+        <div style="flex: 1; min-width: 300px;">
+            <img src="public/meeting_img2.png" alt="ColorStack Meeting" style="width: 100%; max-width: 700px; height: auto; border-radius: 10px;">
+        </div>
+    
+        </div>
+    </section>
+  
+    <!--MISSION STATEMENT-->
+    <section style=
+    "background-color: #ffffff;
+    ">
+        <h1 className = "welcome-text" id="AboutUs" style=
+            "color: #005A3C;
+            text-align: center;
+            margin-top: 59px;
+            font-size: 2rem;
+            margin-bottom: 0;
+            "> Our Mission
+        </h1>
+        <p style=
+            "color: #374151;
+            text-align: center;
+            font-family: Inter;
+            font-size: 1.16rem;
+            margin-bottom: 40px;
+            "> ColorStack's mission is to increase the number of Black, Latinx, and Indigenous <br/> technologists who graduate and go on to start rewarding technical careers.
+        </p>
 
-            <p style="color: #ffffff; font-family: Inter; font-size: 27px; margin-bottom: 50px;">
-                We are a community of students passionate about technology and <br/> diversity.
+        <!--BENEFITS CARDS-->
+        <div class="container" style="
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-left: 250px;
+        margin-bottom: 40px;
+      ">
+
+            <!--COMMUNITY CARD-->
+            <div style="
+                margin-left: 20px;
+                margin-top: 5px;
+                flex: 1;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                ">
+                <div style="
+                    background-color: #E5F2EE;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 64px;
+                    height: 64px;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#005A3C" style="width: 60px; height: 28px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                    </svg>
+                </div>
+                <h1 className = "welcome-text" style=
+                    "color: #000000;
+                    text-align: left;
+                    font-size: 1.5rem;
+                    margin-left: 20px;
+                    "> Community
+                </h1>
+                <p style=
+                    "color: #374151;
+                    text-align: left;
+                    font-family: Inter;
+                    font-size: 1.16rem;
+                    margin-bottom: 20px;
+                    margin-left: 20px;
+                    "> Build connections with peers and professionals in tech who share similar backgrounds and experiences.
+                </p>
+            </div>
+
+            <!--EDUCATION CARD-->
+            <div style="
+                margin-left: 20px;
+                margin-top: 5px;
+                flex: 1;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                ">
+                <div style="
+                    background-color: #E5F2EE;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 64px;
+                    height: 64px;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#005A3C" style="width: 60px; height: 28px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                    </svg>
+                </div>
+                <h1 className = "welcome-text" style=
+                    "color: #000000;
+                    text-align: left;
+                    font-size: 1.5rem;
+                    margin-left: 20px;
+                    margin-right: 15px;
+                    "> Education
+                </h1>
+                <p style=
+                    "color: #374151;
+                    text-align: left;
+                    font-family: Inter;
+                    font-size: 1.16rem;
+                    margin-left: 20px;
+                    margin-right: 15px;
+                    "> Access resources, workshops, and mentorship to help you succeed in your technical education and career.
+                </p>
+            </div>
+            
+            <!--OPPORTUNITY CARD-->
+            <div style="
+                margin-left: 20px;
+                margin-top: 5px;
+                flex: 1;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                ">
+                <div style="
+                    background-color: #E5F2EE;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 64px;
+                    height: 64px;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#005A3C" style="width: 28px; height: 28px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                </div>
+                <h1 className = "welcome-text" style=
+                    "color: #000000;
+                    text-align: left;
+                    font-size: 1.5rem;
+                    margin-left: 20px;
+                    margin-right: 15px;
+                    "> Opportunity
+                </h1>
+                <p style=
+                    "color: #374151;
+                    text-align: left;
+                    font-family: Inter;
+                    font-size: 1.16rem;
+                    margin-left: 20px;
+                    margin-right: 15px;
+                    "> Discover internships, scholarships, and job opportunities specifically for underrepresented students in tech.
+                </p>
+            </div>
+
+        </div>
+      
+
+    </section>
+
+    <section style="background-color: #f9f9f9; padding: 60px 20px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; max-width: 1200px; margin: 0 auto; align-items: flex-start;">
+          
+          <!-- TEXT -->
+          <div style="flex: 1 1 400px; min-width: 300px;">
+            <h2 style="color: #005A3C; font-size: 2rem; font-weight: 700; margin-bottom: 20px;">What We Do</h2>
+            <p style="color: #374151; font-size: 1.125rem; font-family: Inter, sans-serif; margin-bottom: 20px;">
+                ColorStack LUM drives progress in tech by creating a welcoming space for students of all backgrounds to explore, grow, and thrive. Rooted in community and support, our chapter empowers members with the tools, guidance, and experiences needed to confidently pursue careers in technology and beyond.
+            </p>
+            <p style="color: #374151; font-size: 1.125rem; font-family: Inter, sans-serif; margin-bottom: 20px;">
+              We guide students toward success by providing practical tools, mentorship, and experiences that prepare them for life beyond the classroom. Whether it’s skill-building sessions, networking opportunities, or collaborative events, we’re helping students take confident steps toward their future careers.
+            </p>
+            <a href="https://forms.gle/Ya52JCUpUz5DQdm1A" target="_blank" rel="noopener noreferrer" style="
+              display: inline-block;
+              background-color: #005A3C;
+              color: #ffffff;
+              padding: 12px 24px;
+              font-weight: 600;
+              font-family: Inter, sans-serif;
+              border-radius: 8px;
+              text-decoration: none;
+              margin-top: 30px;
+            ">
+              Become a member →
+            </a>
+          </div>
+      
+          <!-- IMAGES GRID -->
+          <div style="flex: 1 1 500px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+            <img src="public/meeting_img3.png" alt="Event 3" style="width: 100%; border-radius: 12px;">
+            <img src="public/meeting_img4.png" alt="Event 1" style="width: 100%; border-radius: 12px;">
+            <img src="public/meeting_img5.png" alt="Event 2" style="width: 100%; border-radius: 12px;">
+            <img src="public/1stplace.png" alt="Event 3" style="width: 100%; border-radius: 12px;">
+          </div>
+      
+        </div>
+      </section>
+      
+
+    
+    <!--LOGO CAROUSEL-->
+    <section>
+        <div id="logo-carousel"></div>
+
+        <script>
+          fetch('carousel.html')
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById('logo-carousel').innerHTML = html;
+            });
+        </script>
+    </section>
+
+
+    <section style="
+        background-color: #005A3C;
+        padding: 60px 20px;
+        font-family: Inter, sans-serif;
+        color: white;
+    ">
+        <div style="
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+        ">
+        
+        <!-- Left Side: Opportunities -->
+        <div style="flex: 1 1 500px;">
+            <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 30px;">Opportunities For You</h2>
+    
+            <div style="margin-bottom: 25px;">
+            <p style="font-weight: 600; font-size: 1.1rem;">➤ Find Internships & Scholarships</p>
+            <p style="margin-top: 4px; color: #d1fae5;">Access exclusive internship, co-op, and scholarship opportunities posted in our Discord community.</p>
+            </div>
+    
+            <div style="margin-bottom: 25px;">
+            <p style="font-weight: 600; font-size: 1.1rem;">➤ Career Development</p>
+            <p style="margin-top: 4px; color: #d1fae5;">Get career advice and learn how to stand out when recruiting for tech positions.</p>
+            </div>
+    
+            <div style="margin-bottom: 25px;">
+            <p style="font-weight: 600; font-size: 1.1rem;">➤ Industry Connections</p>
+            <p style="margin-top: 4px; color: #d1fae5;">Speak with recruiters and engineers at our company-led workshops and networking events.</p>
+            </div>
+    
+            <div>
+            <p style="font-weight: 600; font-size: 1.1rem;">➤ Community Support</p>
+            <p style="margin-top: 4px; color: #d1fae5;">Meet new friends and find your support system in college and beyond.</p>
+            </div>
+        </div>
+    
+        <!-- Right Side: Join Card -->
+        <div style="
+            flex: 1 1 200px;
+            background-color: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            height: 250px;
+            align-items: center;
+            margin: auto;
+            
+        ">
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 15px;">Join ColorStack LUM Today!</h3>
+            <p style="color: #e5e7eb; font-size: 1rem; margin-bottom: 25px;">
+            Become part of a community dedicated to supporting computer sciencer students to launch rewarding careers in tech.
+            </p>
+    
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="https://discord.gg/colorstack" target="_blank" rel="noopener noreferrer" style="
+                padding: 12px 20px;
+                background-color: white;
+                color: #005A3C;
+                border-radius: 8px;
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.95rem;
+            ">Join us on The Bridge</a>
+    
+            <a href="https://discord.gg/colorstack" target="_blank"  rel="noopener noreferrer" style="
+                padding: 12px 20px;
+                background-color: white;
+                color: #005A3C;
+                border-radius: 8px;
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.95rem;
+            ">Join our Discord</a>
+            </div>
+
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #d1d5db;">
+                Already part of ColorStack? Make sure you're active on Discord and The Bridge.
             </p>
 
-            <!--BUTTONS-->
-            <div style="margin-right: 100px; color: #005A3C; text-decoration: none;">
-                <a href="" small-text style=
-                    "color: #005A3C;
-                    background-color: white;
-                    padding: 20px;
-                    border-radius: 10px;
-                    font-weight: 550;
-                    margin-top: 50px;
-                    margin-right: 10px;
-                    
-                    ">Join our community
-                </a>
-                <a href="https://linktr.ee/colorstacklum" style=
-                    "color: #005A3C;
-                    background-color: white;
-                    padding: 20px;
-                    border-radius: 10px;
-                    font-weight: 550;
-                    margin-top: 50px;
-                    
-                    ">Learn more
-                </a>
-            </div>
-        </div>  
+        </div>
+    
+        </div>
     </section>
+  
 
-    <section>
+    <!--FOOTER-->
+    <footer style="
+    background-color: #F3F4F6;
+    padding: 40px 20px;
+    font-family: Inter, sans-serif;
+    color: #374151;
+  ">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; text-align: left;">
+      
+      <!-- Left -->
+      <div style="flex: 1 1 300px;">
+        <p style="font-weight: 700; font-size: 1.2rem; margin-bottom: 10px;">ColorStack LUM</p>
+        <p style="font-size: 0.95rem; line-height: 1.6;">
+          Empowering underrepresented students in tech through community, opportunity, and support.
+        </p>
+      </div>
+  
+      <!-- Middle -->
+      <div style="flex: 1 1 300px;">
+        <p style="font-weight: 600; margin-bottom: 10px;">Connect With Us</p>
+        <a href="mailto:colorstackloyola@gmail.com" style="color: #374151; text-decoration: none; display: block; margin-bottom: 6px;">Email</a>
+        <a href="https://www.instagram.com/colorstacklum" target="_blank"  rel="noopener noreferrer" style="color: #374151; text-decoration: none; display: block; margin-bottom: 6px;">Instagram</a>
+        <a href="https://discord.gg/fFfPg65jh9" target="_blank" style="color: #374151; text-decoration: none; display: block;">Join Our Discord</a>
+      </div>
 
-    </section>
+        <!-- Right -->
+        <div style="flex: 1 1 300px;">
+            <p style="font-weight: 600; margin-bottom: 10px;">Resources</p>
+            <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs" target="_blank" rel="noopener noreferrer" style="color: #374151; text-decoration: none; display: block; margin-bottom: 6px;">Resume Template</a>
+            <a href="https://docs.google.com/document/d/1qjOsukthlA5GZXF7gdSioEkr25_TmKlVvVg4mQK24CE/edit?tab=t.0"  target="_blank"  rel="noopener noreferrer" style="color: #374151; text-decoration: none; display: block; margin-bottom: 6px;">Interview Prep</a>
+            <a href="https://discord.gg/27PFn4MsC8" target="_blank"  rel="noopener noreferrer" style="color: #374151; text-decoration: none; display: block;">Internship Opportunities</a>
+        </div>
+    </div>
+  
+    <p style="text-align: center; margin-top: 50px; font-size: 0.85rem; color: #9CA3AF;">
+      © 2025 ColorStack at Loyola University Maryland. All rights reserved.
+    </p>
+  </footer>
+  
+  
 </body>
+
 </html>
