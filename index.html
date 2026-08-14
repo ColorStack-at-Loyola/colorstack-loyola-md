@@ -7,39 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColorStack at Loyola University Maryland</title>
     <link rel="stylesheet" href="style.css">
+    <script src="motion.js" defer></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
     <!--Navbar-->
-    <section style="background-color: #ffffff; display: flex; justify-content: space-between; gap: 10px; margin-top: 0; padding: 0 270px; width: 100%;">
-        <div style= "display: flex; flex-direction: row; align-items: center; ">
+    <nav class="site-nav" aria-label="Primary navigation">
+        <div class="site-nav-inner">
             
             <div>
-                <a href="/" style="display: flex; flex-direction: row; align-items: center; text-decoration: none;">
+                <a href="/" class="site-brand" aria-label="ColorStack at Loyola University Maryland — Home">
                     <img src="/public/colorstacklum_logo.png" alt="ColorStack Logo" style=
                     "height: 40px;
                     border-radius: 10px;
                     ">
-                    <h1 className = "navbar-text" style="color: #005A3C; font-size: 27px; margin-right: 10px;">ColorStack</h1>
-                    <h1 className = "navbar-text" style="color: #6B7280; font-size: 13px; font-weight: 400; margin-right: 500px;">at Loyola University Maryland</h1>
+                    <span class="brand-name">ColorStack</span>
+                    <span class="brand-context">at Loyola University Maryland</span>
                 </a>
             </div>
             
-            <div style=
-                "gap: 30px; display: flex; flex-direction: row; font-size: 16px;"> 
+            <div class="site-nav-links">
             <!-- Nav Links -->
             <a href="/" class="navbar-text" style="color: #000000; font-weight: 500; padding: 10px 0; text-decoration: none;">Home</a>
             <a href="/about.html" class="navbar-text" style="color: #000000; font-weight: 500; padding: 10px 0; text-decoration: none;">About</a>
             <a href="/resources.html" class="navbar-text" style="color: #000000; font-weight: 500; padding: 10px 0; text-decoration: none; ">Resources</a>
-            <a href="https://forms.gle/Ya52JCUpUz5DQdm1A" target="_blank" class="navbar-text" style="color: #ffffff; font-weight: 500; background-color: #005A3C; border-radius: 7px; padding: 10px 20px; text-decoration: none; margin-left: 160px;">Join</a>
+            <a href="https://forms.gle/Ya52JCUpUz5DQdm1A" target="_blank" rel="noopener noreferrer" class="navbar-text nav-join">Join</a>
 
             </div>
         </div>
-    </section>
+    </nav>
 
     <!--Hero Section-->
-    <section style="background-image: linear-gradient(#005A3C, #006B43, #006241); padding: 100px 250px; max-width: 100%;">
+    <section class="hero-section" style="background-image: linear-gradient(#005A3C, #006B43, #006241); padding: 100px 250px; max-width: 100%;">
         <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 60px;">
     
         <!-- Left: Text -->
@@ -52,7 +52,7 @@
             We are a community of students passionate about technology and <br /> diversity.
             </p>
     
-            <div style="margin-top: 20px;">
+            <div class="welcome-buttons">
             <a href="https://forms.gle/Ya52JCUpUz5DQdm1A" style="color: #005A3C; background-color: white; padding: 15px 30px; border-radius: 10px; margin-right: 10px; text-decoration: none; display: inline-block;">Become a member</a>
             <a href="/about.html" style="color: #005A3C; background-color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; display: inline-block;">Learn more</a>
             </div>
@@ -70,7 +70,7 @@
     <section style=
     "background-color: #ffffff;
     ">
-        <h1 className = "welcome-text" id="AboutUs" style=
+        <h1 class="welcome-text" id="AboutUs" style=
             "color: #005A3C;
             text-align: center;
             margin-top: 59px;
@@ -84,7 +84,7 @@
             font-family: Inter;
             font-size: 1.16rem;
             margin-bottom: 40px;
-            "> ColorStack's mission is to increase the number of Black, Latinx, and Indigenous <br/> technologists who graduate and go on to start rewarding technical careers.
+            "> Our mission is to empower students to pursue and succeed in tech careers by providing access to mentorship, career preparation, and a community built on respect and opportunity.
         </p>
 
         <!--BENEFITS CARDS-->
@@ -120,7 +120,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
                     </svg>
                 </div>
-                <h1 className = "welcome-text" style=
+                <h1 class="welcome-text" style=
                     "color: #000000;
                     text-align: left;
                     font-size: 1.5rem;
@@ -161,7 +161,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
                     </svg>
                 </div>
-                <h1 className = "welcome-text" style=
+                <h1 class="welcome-text" style=
                     "color: #000000;
                     text-align: left;
                     font-size: 1.5rem;
@@ -203,7 +203,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                     </svg>
                 </div>
-                <h1 className = "welcome-text" style=
+                <h1 class="welcome-text" style=
                     "color: #000000;
                     text-align: left;
                     font-size: 1.5rem;
@@ -218,7 +218,7 @@
                     font-size: 1.16rem;
                     margin-left: 20px;
                     margin-right: 15px;
-                    "> Discover internships, scholarships, and job opportunities specifically for underrepresented students in tech.
+                    "> Discover internships, scholarships, and job opportunities specifically for students in tech (Computer Science, Data Science, Engineering, Info Science, and more!)
                 </p>
             </div>
 
@@ -239,17 +239,7 @@
             <p style="color: #374151; font-size: 1.125rem; font-family: Inter, sans-serif; margin-bottom: 20px;">
               We guide students toward success by providing practical tools, mentorship, and experiences that prepare them for life beyond the classroom. Whether it’s skill-building sessions, networking opportunities, or collaborative events, we’re helping students take confident steps toward their future careers.
             </p>
-            <a href="https://forms.gle/Ya52JCUpUz5DQdm1A" target="_blank" rel="noopener noreferrer" style="
-              display: inline-block;
-              background-color: #005A3C;
-              color: #ffffff;
-              padding: 12px 24px;
-              font-weight: 600;
-              font-family: Inter, sans-serif;
-              border-radius: 8px;
-              text-decoration: none;
-              margin-top: 30px;
-            ">
+            <a href="https://forms.gle/Ya52JCUpUz5DQdm1A" target="_blank" rel="noopener noreferrer" class ="welcome-button2">
               Become a member →
             </a>
           </div>
@@ -273,9 +263,30 @@
 
         <script>
           fetch('carousel.html')
-            .then(res => res.text())
+            .then(res => {
+              if (!res.ok) throw new Error(`Carousel request failed: ${res.status}`);
+              return res.text();
+            })
             .then(html => {
-              document.getElementById('logo-carousel').innerHTML = html;
+              const carousel = document.getElementById('logo-carousel');
+              carousel.innerHTML = html;
+
+              // Four identical groups keep the track wider than ultrawide
+              // viewports. Moving exactly 25% advances one complete group.
+              carousel.querySelectorAll('.logo-lane').forEach(lane => {
+                const source = lane.querySelector('.logo-group');
+                while (lane.children.length < 4) {
+                  const copy = source.cloneNode(true);
+                  copy.setAttribute('aria-hidden', 'true');
+                  copy.querySelectorAll('img').forEach(img => img.alt = '');
+                  lane.appendChild(copy);
+                }
+              });
+            })
+            .catch(error => {
+              console.error(error);
+              document.getElementById('logo-carousel').innerHTML =
+                '<p class="carousel-error" role="status">Member company highlights are temporarily unavailable.</p>';
             });
         </script>
     </section>
@@ -322,7 +333,7 @@
         </div>
     
         <!-- Right Side: Join Card -->
-        <div style="
+        <div class="join-card" style="
             flex: 1 1 200px;
             background-color: rgba(255, 255, 255, 0.08);
             border-radius: 12px;
@@ -393,7 +404,7 @@
         <p style="font-weight: 600; margin-bottom: 10px;">Connect With Us</p>
         <a href="mailto:colorstackloyola@gmail.com" style="color: #374151; text-decoration: none; display: block; margin-bottom: 6px;">Email</a>
         <a href="https://www.instagram.com/colorstacklum" target="_blank"  rel="noopener noreferrer" style="color: #374151; text-decoration: none; display: block; margin-bottom: 6px;">Instagram</a>
-        <a href="https://discord.gg/fFfPg65jh9" target="_blank" style="color: #374151; text-decoration: none; display: block;">Join Our Discord</a>
+        <a href="https://discord.gg/fFfPg65jh9" target="_blank" rel="noopener noreferrer" style="color: #374151; text-decoration: none; display: block;">Join Our Discord</a>
       </div>
 
         <!-- Right -->
@@ -406,8 +417,11 @@
     </div>
   
     <p style="text-align: center; margin-top: 50px; font-size: 0.85rem; color: #9CA3AF;">
-      © 2025 ColorStack at Loyola University Maryland. All rights reserved.
+      © <span id="year"></span> ColorStack at Loyola University Maryland. All rights reserved.
     </p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
   
   
